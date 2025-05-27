@@ -4,6 +4,10 @@
   </head>
   <body>
     <a-scene>
+      <a-assets>
+        <a-asset-item id="sofa-asset" src="/assets/sofa.glb"></a-asset-item>
+      </a-assets>
+
       <!-- floor -->
       <a-plane
         position="0 0 0"
@@ -13,17 +17,16 @@
         color="#cccccc"
       ></a-plane>
 
-      <!-- Främre vägg som går hela vägen längst fram -->
+      <!-- eye to eye wal -->
       <a-box
         position="0 1.5 -6"
         depth="0.1"
         height="3"
         width="12"
         color="#ffffff"
-      >
-      </a-box>
+      ></a-box>
 
-      <!-- left wall-->
+      <!-- Left wall -->
       <a-box
         position="-6 1.5 0"
         depth="12"
@@ -41,16 +44,16 @@
         color="#ffffff"
       ></a-box>
 
-      <!-- Camera -->
-      <a-entity
-        camera
-        look-controls
-        wasd-controls
-        position="0 1.6 6"
-        rotation="0 180 0"
-      ></a-entity>
+      <!-- Sofa -->
+      <a-gltf-model
+        id="soffa"
+        src="#sofa-asset"
+        position="-1 0 -2"
+        scale="1.5 1.5 1.5"
+        rotation="0 270 0"
+      ></a-gltf-model>
 
-      <!-- Table-->
+      <!-- Table -->
       <a-entity id="burano-table" position="0 0 0">
         <a-box
           position="0 0.3 0"
@@ -60,9 +63,19 @@
           color="#a0c8f0"
           opacity="0.35"
           transparent="true"
-        >
-        </a-box>
+        ></a-box>
       </a-entity>
+
+      <!-- Camera -->
+      <a-entity
+        camera
+        look-controls
+        wasd-controls
+        position="0 1.6 6"
+        rotation="0 180 0"
+      ></a-entity>
     </a-scene>
+
+    <script src="script.js"></script>
   </body>
 </html>
