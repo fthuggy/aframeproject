@@ -6,6 +6,15 @@
     <a-scene>
       <a-assets>
         <a-asset-item id="sofa-asset" src="/assets/sofa.glb"></a-asset-item>
+        <a-asset-item id="sushi-asset" src="/assets/sushi.glb"></a-asset-item>
+        <a-asset-item
+          id="redbull-asset"
+          src="/assets/redbull.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="remote-asset"
+          src="/assets/tv_remote.glb"
+        ></a-asset-item>
       </a-assets>
 
       <!-- floor -->
@@ -48,18 +57,55 @@
       <a-gltf-model
         id="soffa"
         src="#sofa-asset"
-        position="-1 0 -2"
+        position="-3 0 2"
         scale="1.5 1.5 1.5"
         rotation="0 270 0"
       ></a-gltf-model>
+      <!--Sushi-->
+      <a-gltf-model
+        id="sushi"
+        src="#sushi-asset"
+        position="-3.8 0.6 3.5"
+        scale="0.5 0.5 0.5"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      <!--RedBull-->
+      <a-gltf-model
+        id="redbull"
+        src="#redbull-asset"
+        position="-3 0.5 2.6"
+        scale="0.5 0.5 0.5"
+        rotation="0 0 0"
+      ></a-gltf-model>
+
+      <!--Remote-->
+      <a-gltf-model
+        id="remote"
+        src="#remote-asset"
+        position="-3.8 0.6 4"
+        scale="0.02 0.02 0.02"
+        rotation="0 90 0"
+      ></a-gltf-model>
+
+      <!--TV-->
+      <a-box
+        id="tv"
+        position="-5.95 2 4"
+        width="2.9"
+        height="1.5"
+        depth="0.05"
+        color="#111111"
+        material="metalness: 0.8; roughness: 0.2"
+        rotation="0 90 0"
+      ></a-box>
 
       <!-- Table -->
-      <a-entity id="burano-table" position="0 0 0">
+      <a-entity id="burano-table" position="-3.6 0 0">
         <a-box
-          position="0 0.3 0"
-          width="2.1"
+          position="-0.2 0.3 4"
+          width="0.5"
           height="0.5"
-          depth="0.5"
+          depth="2.1"
           color="#a0c8f0"
           opacity="0.35"
           transparent="true"
