@@ -15,6 +15,10 @@
           id="remote-asset"
           src="/assets/tv_remote.glb"
         ></a-asset-item>
+        <a-asset-item id="carpet-asset" src="/assets/carpet.glb"></a-asset-item>
+       <a-asset-item id="djturntable-asset" src="/assets/djturntable.glb"></a-asset-item>
+       <a-asset-item id="speaker-asset" src="/assets/speaker.glb"></a-asset-item>
+        <a-asset-item id="headphone-asset" src="/assets/headphone.glb"></a-asset-item>
       </a-assets>
 
       <!-- floor -->
@@ -26,7 +30,7 @@
         color="#cccccc"
       ></a-plane>
 
-      <!-- eye to eye wal -->
+      <!-- eye to eye wall -->
       <a-box
         position="0 1.5 -6"
         depth="0.1"
@@ -34,6 +38,49 @@
         width="12"
         color="#ffffff"
       ></a-box>
+      <!--Carpet-->
+      <a-gltf-model
+        id="carpet"
+        src="#carpet-asset"
+        position="-4.6 0 -5.1"
+        scale="1.5 1.5 1.5"
+        rotation="0 0 0"
+      >
+      </a-gltf-model>
+<a-entity id="dj-table-group" position="-4.6 0 -5.1">
+  <!-- DJ table -->
+  <a-box position="0 1 0" width="2" height="0.1" depth="1" color="#E4D1B8"></a-box>
+
+  <!--DJ table legs -->
+  <a-box position="-0.9 0.5 -0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
+  <a-box position="0.9 0.5 -0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
+  <a-box position="-0.9 0.5 0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
+  <a-box position="0.9 0.5 0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
+  <!--DJ turntable-->
+<a-gltf-model
+  id="djturntable"
+  src="#djturntable-asset"
+  position="0 1.05 0"
+  scale="0.2 0.2 0.2"
+  rotation="0 0 0"
+></a-gltf-model>
+<!--Speaker-->
+<a-gltf-model
+  id="speaker"
+  src="#speaker-asset"
+  position="1.3 0 -0.5"
+  scale="0.3 0.3 0.3"
+  rotation="0 0 0"
+></a-gltf-model>
+<!--Headphones-->
+<a-gltf-model
+  id="headphone"
+  src="#headphone-asset"
+  position="0.5 1.07 0.5"
+  scale="3 3 3"
+  rotation="-90 -10 0"
+></a-gltf-model>
+</a-entity>
 
       <!-- Left wall -->
       <a-box
@@ -61,7 +108,7 @@
         scale="1.5 1.5 1.5"
         rotation="0 270 0"
       ></a-gltf-model>
-      
+
       <!--Sushi-->
       <a-gltf-model
         id="sushi"
