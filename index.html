@@ -16,9 +16,19 @@
           src="/assets/tv_remote.glb"
         ></a-asset-item>
         <a-asset-item id="carpet-asset" src="/assets/carpet.glb"></a-asset-item>
-       <a-asset-item id="djturntable-asset" src="/assets/djturntable.glb"></a-asset-item>
-       <a-asset-item id="speaker-asset" src="/assets/speaker.glb"></a-asset-item>
-        <a-asset-item id="headphone-asset" src="/assets/headphone.glb"></a-asset-item>
+        <a-asset-item
+          id="djturntable-asset"
+          src="/assets/djturntable.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="speaker-asset"
+          src="/assets/speaker.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="headphone-asset"
+          src="/assets/headphone.glb"
+        ></a-asset-item>
+        <a-asset-item id="plant-asset" src="/assets/plant.glb"></a-asset-item>
       </a-assets>
 
       <!-- floor -->
@@ -27,7 +37,7 @@
         rotation="-90 0 0"
         width="12"
         height="12"
-        color="#cccccc"
+        color="#cfcac0"
       ></a-plane>
 
       <!-- eye to eye wall -->
@@ -47,40 +57,170 @@
         rotation="0 0 0"
       >
       </a-gltf-model>
-<a-entity id="dj-table-group" position="-4.6 0 -5.1">
-  <!-- DJ table -->
-  <a-box position="0 1 0" width="2" height="0.1" depth="1" color="#E4D1B8"></a-box>
 
-  <!--DJ table legs -->
-  <a-box position="-0.9 0.5 -0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
-  <a-box position="0.9 0.5 -0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
-  <a-box position="-0.9 0.5 0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
-  <a-box position="0.9 0.5 0.45" width="0.1" height="1" depth="0.1" color="#E4D1B8"></a-box>
-  <!--DJ turntable-->
-<a-gltf-model
-  id="djturntable"
-  src="#djturntable-asset"
-  position="0 1.05 0"
-  scale="0.2 0.2 0.2"
-  rotation="0 0 0"
-></a-gltf-model>
-<!--Speaker-->
-<a-gltf-model
-  id="speaker"
-  src="#speaker-asset"
-  position="1.3 0 -0.5"
-  scale="0.3 0.3 0.3"
-  rotation="0 0 0"
-></a-gltf-model>
-<!--Headphones-->
-<a-gltf-model
-  id="headphone"
-  src="#headphone-asset"
-  position="0.5 1.07 0.5"
-  scale="2 2 2"
-  rotation="-90 -10 5"
-></a-gltf-model>
-</a-entity>
+      <a-entity id="dj-table-group" position="-4.6 0 -5.1">
+        <!-- DJ table -->
+        <a-box
+          position="0 1 0"
+          width="2"
+          height="0.1"
+          depth="1"
+          color="#E4D1B8"
+        ></a-box>
+
+        <!--DJ table legs -->
+        <a-box
+          position="-0.9 0.5 -0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="0.9 0.5 -0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="-0.9 0.5 0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="0.9 0.5 0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <!--DJ turntable-->
+        <a-gltf-model
+          id="djturntable"
+          src="#djturntable-asset"
+          position="0 1.05 0"
+          scale="0.2 0.2 0.2"
+          rotation="0 0 0"
+        ></a-gltf-model>
+        <!--Speaker-->
+        <a-gltf-model
+          id="speaker"
+          src="#speaker-asset"
+          position="1.3 0 -0.5"
+          scale="0.3 0.3 0.3"
+          rotation="0 0 0"
+        ></a-gltf-model>
+        <!--Headphones-->
+        <a-gltf-model
+          id="headphone"
+          src="#headphone-asset"
+          position="0.5 1.07 0.5"
+          scale="2 2 2"
+          rotation="-90 -10 5"
+        ></a-gltf-model>
+      </a-entity>
+      <!--Computer table-->
+      <a-entity id="computer-table-group" position="4 0 -4.8">
+        <!-- computer table -->
+        <a-box
+          position="0 1 0"
+          width="2"
+          height="0.1"
+          depth="1"
+          color="#E4D1B8"
+        ></a-box>
+
+        <!--computer table legs -->
+        <a-box
+          position="-0.9 0.5 -0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="0.9 0.5 -0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="-0.9 0.5 0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="0.9 0.5 0.45"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <!-- computer rug -->
+        <a-cylinder
+          position="0 0 0"
+          radius="1.2"
+          height="0.03"
+          color="#f5f5f0"
+          segments-radial="64"
+        ></a-cylinder>
+      </a-entity>
+
+      <a-entity id="sewing-table-group" position="5.2 0 4.7" rotation="0 90 0">
+        <!-- sewing table -->
+        <a-box
+          position="0 1 -0.34"
+          width="1.6"
+          height="0.1"
+          depth="0.8"
+          color="#E4D1B8"
+        ></a-box>
+
+        <!-- sewing table legs -->
+        <a-box
+          position="-0.7 0.5 -0.74"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="0.7 0.5 -0.74"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="-0.7 0.5 0.06"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+        <a-box
+          position="0.7 0.5 0.06"
+          width="0.1"
+          height="1"
+          depth="0.1"
+          color="#E4D1B8"
+        ></a-box>
+
+        <!-- Sewing rug -->
+        <a-cylinder
+          position="0 0 -0.5"
+          radius="1.2"
+          height="0.03"
+          color="#f5f5f0"
+          segments-radial="64"
+        ></a-cylinder>
+      </a-entity>
 
       <!-- Left wall -->
       <a-box
@@ -104,10 +244,19 @@
       <a-gltf-model
         id="soffa"
         src="#sofa-asset"
-        position="-3 0 2"
+        position="-3 0 1.5"
         scale="1.5 1.5 1.5"
         rotation="0 270 0"
       ></a-gltf-model>
+      <!--rugg-->
+      <a-cylinder
+        position="-2.9 0.05 3.2"
+        radius="2.8"
+        height="0.03"
+        color="#f5f5f0"
+        segments-radial="64"
+      >
+      </a-cylinder>
 
       <!--Sushi-->
       <a-gltf-model
@@ -134,7 +283,14 @@
         scale="0.02 0.02 0.02"
         rotation="0 90 0"
       ></a-gltf-model>
-
+      <!--Plant-->
+      <a-gltf-model
+        id="plant"
+        src="#plant-asset"
+        position="-5.2 0 2"
+        scale="1 1 1"
+        rotation="0 90 0"
+      ></a-gltf-model>
       <!--TV-->
       <a-box
         id="tv"
