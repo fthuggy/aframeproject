@@ -38,6 +38,11 @@
           id="sewing-asset"
           src="/assets/sewing-machine.glb"
         ></a-asset-item>
+        <a-asset-item
+          id="pottedplant-asset"
+          src="/assets/potted_plant.glb"
+        ></a-asset-item>
+        <a-asset-item id="mouse" src="/assets/mouse.glb"></a-asset-item>
       </a-assets>
 
       <!-- floor -->
@@ -148,6 +153,25 @@
           scale="1.5 1.5 1.5"
           rotation="0 90 0"
         ></a-gltf-model>
+        <!--Plant-->
+        <a-gltf-model
+          id="pottedplant"
+          src="#pottedplant-asset"
+          position="-0.6 1.01 0.5"
+          rotation="0 0 0"
+          scale="1.05 1.05 1.05"
+        ></a-gltf-model>
+
+        <!--Computer mouse-->
+        <a-gltf-model
+          id="mouse"
+          src="#mouse"
+          position="0.4 1.05 0.5"
+          scale="1.2 1.2 1.2"
+          rotation="0 90 0"
+        ></a-gltf-model>
+
+        <!--Computer chair-->
 
         <!-- computer rug -->
         <a-cylinder
@@ -176,7 +200,7 @@
           scale="1 1 1"
           rotation="0 75 0"
         ></a-gltf-model>
-<!--Sewing rung-->
+        <!--Sewing rung-->
         <a-cylinder
           id="sewing-rug"
           position="0 0 -0.5"
