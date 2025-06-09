@@ -48,6 +48,17 @@
         ></a-asset-item>
         <a-asset-item id="fabrics" src="/assets/fabric_rool.glb"></a-asset-item>
         <a-asset-item id="carpet" src="/assets/carpet.glb"></a-asset-item>
+        <a-asset-item
+          id="beanbag-asset"
+          src="/assets/bean_bag.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="plant2-asset"
+          src="/assets/potted_plant2.glb"
+        ></a-asset-item>
+        <img id="poster-img1" src="/assets/1.jpg" />
+        <img id="poster-img2" src="/assets/2.jpg" />
+        <img id="poster-img3" src="assets/3.jpg" />
       </a-assets>
 
       <!-- floor -->
@@ -67,6 +78,49 @@
         width="12"
         color="#ffffff"
       ></a-box>
+      <!--Posters-->
+      <a-image
+        src="#poster-img1"
+        position="0 1.5 -5.9"
+        width="1"
+        height="1.5"
+        rotation="0 0 0"
+      >
+      </a-image>
+      <a-image
+        src="#poster-img2"
+        position="-4 1.5 -5.9"
+        width="1"
+        height="1.5"
+        rotation="0 0 0"
+      >
+      </a-image>
+
+      <a-image
+        src="#poster-img3"
+        position="4 1.5 -5.9"
+        width="1"
+        height="1.5"
+        rotation="0 0 0"
+      >
+      </a-image>
+      <!--Plant2-->
+      <a-gltf-model
+        id="plant2"
+        src="#plant2-asset"
+        position="-5.3 0 -5.2"
+        scale="-5.5 5.5 5.5"
+        rotation="0 180 0"
+      ></a-gltf-model>
+
+      <!--Bean Bag-->
+      <a-gltf-model
+        id="beanbag"
+        src="#beanbag-asset"
+        position="-0.9 0 -6.5"
+        scale="0.03 0.03 0.03"
+        rotation="0 75 0"
+      ></a-gltf-model>
 
       <a-entity id="dj-table-group" position="-2 0 -4">
         <!-- Carpet -->
