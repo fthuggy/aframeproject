@@ -16,7 +16,7 @@ In summary, my future studio is a creative space where I can express all parts o
 ## Technologies and websites used to create the space
 - Visual Studio Code
 - Blender
-- Trip Studio
+- Tripo Studio
 - Canva
 - Sketchfab
 
